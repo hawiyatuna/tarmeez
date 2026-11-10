@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>404 · ليش مستعجل؟</title>
+<meta name="description" content="اصبر عليّ يومين">
+<meta name="theme-color" content="#0A1630">
+<meta property="og:title" content="404 · ليش مستعجل؟">
+<meta property="og:description" content="اصبر عليّ يومين">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 84 96'%3E%3Cpath d='M36 0h11v11h-11z M24 12h11v11h-11z M36 12h11v11h-11z M48 12h11v11h-11z M24 24h11v11h-11z M36 24h11v11h-11z M48 24h11v11h-11z M12 36h11v11h-11z M24 36h11v11h-11z M48 36h11v11h-11z M60 36h11v11h-11z M12 48h11v11h-11z M24 48h11v11h-11z M36 48h11v11h-11z M48 48h11v11h-11z M60 48h11v11h-11z M12 60h11v11h-11z M24 60h11v11h-11z M36 60h11v11h-11z M48 60h11v11h-11z M60 60h11v11h-11z M24 72h11v11h-11z M36 72h11v11h-11z M48 72h11v11h-11z M36 84h11v11h-11z' fill='%234F86FF'/%3E%3Crect x='36' y='36' width='11' height='11' fill='%23E3A22B'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500&family=Reem+Kufi:wght@600;700&display=swap">
+<style>
+:root {
+  --night: #0A1630;
+  --slate: #112147;
+  --volt: #4F86FF;
+  --mint: #4FE3D0;
+  --gold: #E3A22B;
+  --text: #EAF0FF;
+  --muted: #C8D5F5;
+  --font-display: 'Reem Kufi', 'Readex Pro', system-ui, sans-serif;
+  --font-body: 'Readex Pro', system-ui, sans-serif;
+  color-scheme: dark;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { height: 100%; background: var(--night); }
+body {
+  margin: 0;
+  min-height: 100%;
+  background-color: var(--night);
+  background-image: radial-gradient(rgba(79, 134, 255, 0.18) 1.5px, transparent 1.5px);
+  background-size: 28px 28px;
+  color: var(--text);
+  font-family: var(--font-body);
+  padding: env(safe-area-inset-top, 0px) max(16px, env(safe-area-inset-right, 0px)) env(safe-area-inset-bottom, 0px) max(16px, env(safe-area-inset-left, 0px));
+  display: grid;
+  place-items: center;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  text-align: center;
+  padding-block: 48px;
+  max-width: 560px;
+  width: 100%;
+}
+.pen { width: 64px; height: 73px; }
+.code {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(120px, 40vw, 240px);
+  line-height: 0.95;
+  letter-spacing: 0.02em;
+  direction: ltr;
+  color: var(--text);
+  text-shadow: 5px 0 0 rgba(79, 134, 255, 0.55), -5px 0 0 rgba(79, 227, 208, 0.45);
+  animation: glitch 4.2s steps(1) infinite;
+  margin: 0;
+}
+@keyframes glitch {
+  0%, 88%, 100% { transform: none; text-shadow: 5px 0 0 rgba(79, 134, 255, 0.55), -5px 0 0 rgba(79, 227, 208, 0.45); }
+  90% { transform: translateX(-6px) skewX(-6deg); text-shadow: 12px 0 0 rgba(79, 134, 255, 0.8), -10px 0 0 rgba(79, 227, 208, 0.7); }
+  93% { transform: translateX(5px); text-shadow: -8px 0 0 rgba(79, 134, 255, 0.8), 9px 0 0 rgba(227, 162, 43, 0.6); }
+  96% { transform: none; }
+}
+h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(44px, 12vw, 76px);
+  line-height: 1.25;
+  margin: 8px 0 0;
+  text-wrap: balance;
+}
+.wait {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: clamp(24px, 6.4vw, 34px);
+  font-weight: 400;
+  color: var(--muted);
+  margin: 0;
+}
+.dot { width: 14px; height: 14px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
+.loader { display: flex; gap: 8px; margin-top: 28px; direction: ltr; }
+.loader span {
+  width: 18px; height: 18px;
+  background: var(--slate);
+  border: 1px solid rgba(79, 134, 255, 0.35);
+  animation: fill 2.8s steps(1) infinite;
+}
+.loader span:nth-child(2) { animation-delay: 0.35s; }
+.loader span:nth-child(3) { animation-delay: 0.7s; }
+.loader span:nth-child(4) { animation-delay: 1.05s; }
+.loader span:nth-child(5) { animation-delay: 1.4s; }
+.loader span:nth-child(6) { animation-delay: 1.75s; }
+.loader span:nth-child(7) { animation-delay: 2.1s; animation-name: fill-gold; }
+@keyframes fill { 0% { background: var(--volt); } 60% { background: var(--slate); } }
+@keyframes fill-gold { 0% { background: var(--gold); } 60% { background: var(--slate); } }
+@media (prefers-reduced-motion: reduce) {
+  .code, .loader span { animation: none; }
+  .loader span:nth-child(-n+3) { background: var(--volt); }
+}
+</style>
+</head>
+<body>
+<main>
+  <svg class="pen" viewBox="0 0 84 96" aria-hidden="true"><path d="M36 0h11v11h-11z M24 12h11v11h-11z M36 12h11v11h-11z M48 12h11v11h-11z M24 24h11v11h-11z M36 24h11v11h-11z M48 24h11v11h-11z M12 36h11v11h-11z M24 36h11v11h-11z M48 36h11v11h-11z M60 36h11v11h-11z M12 48h11v11h-11z M24 48h11v11h-11z M36 48h11v11h-11z M48 48h11v11h-11z M60 48h11v11h-11z M12 60h11v11h-11z M24 60h11v11h-11z M36 60h11v11h-11z M48 60h11v11h-11z M60 60h11v11h-11z M24 72h11v11h-11z M36 72h11v11h-11z M48 72h11v11h-11z M36 84h11v11h-11z" fill="#4F86FF"/><rect x="36" y="36" width="11" height="11" fill="#E3A22B"/></svg>
+  <p class="code" aria-label="خطأ 404">404</p>
+  <h1>ليش مستعجل؟</h1>
+  <p class="wait">اصبر عليّ يومين <span class="dot" aria-hidden="true"></span></p>
+  <div class="loader" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+</main>
+</body>
+</html>
